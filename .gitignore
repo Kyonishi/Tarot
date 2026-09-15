@@ -1,0 +1,8 @@
+# 本地测试与编辑器文件
+.DS_Store
+Thumbs.db
+.vscode/
+
+# 临时导出文件
+*.tmp
+*.log
