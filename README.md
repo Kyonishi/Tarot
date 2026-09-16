@@ -23,6 +23,8 @@ https://github.com/sixseeds/tarot-api
 
 原始牌面由 Pamela Colman Smith 绘制，最初于 1909 年出版。正式公开发布前，仍应根据目标发布地区复核公版状态。
 
+网页运行时使用 `cards-webp/` 中的压缩牌图；原始 JPG 保留在 `cards/` 目录作为素材源。
+
 ## 数据说明
 
 抽牌历史只保存在当前浏览器的 `localStorage` 中，不会上传到服务器。
