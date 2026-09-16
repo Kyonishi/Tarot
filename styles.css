@@ -22,7 +22,6 @@
 .history-item{padding:12px 0;border-top:1px solid #ffffff18}.history-item button{float:right}
 .history-item small{display:inline-block;color:var(--gold);font-size:12px;letter-spacing:.4px;margin-bottom:5px}
 .history-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.history-actions #clear-history{color:#d98b9e;border-color:#d98b9e66}
-.star-spark{position:fixed;width:6px;height:6px;padding:0;border-radius:50%;background:#ffe99a;box-shadow:0 0 8px 2px #d9b86acc;color:transparent;font-size:0;pointer-events:none;animation:sparkBetter .7s cubic-bezier(.2,.8,.3,1) both}
 .card-detail{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:24px;background:#080b19dd;backdrop-filter:blur(8px);animation:detailIn .25s ease both}
 .card-detail-panel{display:flex;flex-direction:column;align-items:center;gap:8px;width:min(88vw,340px);padding:20px;border:1px solid #d9b86a88;border-radius:16px;background:#14172df2;box-shadow:0 24px 90px #000d}
 .card-detail-panel .card{width:min(62vw,220px);min-height:0;aspect-ratio:148/228;transform:none!important;cursor:default}.card-detail-panel .card.reversed{transform:rotate(180deg)!important}.card-detail-panel .card.reversed img{transform:none!important}
@@ -35,4 +34,7 @@
 @keyframes sparkBetter{0%{opacity:0;transform:translate(0,0) scale(.2)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.8)}}
 @keyframes detailIn{from{opacity:0}to{opacity:1}}
 @media(max-width:560px){.table{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding:8px 12px 18px;scroll-snap-type:x proximity}.card-slot{min-width:112px;scroll-snap-align:center}.card{min-height:0}.card.face.enlarged{transform:scale(1.35)!important}.card.face.enlarged.reversed{transform:scale(1.35) rotate(180deg)!important}.draw{position:sticky;bottom:10px;z-index:5}.draw button{min-height:46px;box-shadow:0 8px 24px #0008}.card-detail{padding:14px}.card-detail-panel{width:min(92vw,330px);padding:16px}.card-detail-panel .card{width:min(58vw,190px)}}
-@media(prefers-reduced-motion:reduce){.card-detail{animation:none}.card.flipping,.card.shuffling,.face.revealed,.star-spark{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+@media(prefers-reduced-motion:reduce){.card-detail{animation:none}.card.flipping,.card.shuffling,.face.revealed{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+.star-particle{position:fixed;z-index:1000;width:5px;height:5px;border-radius:50%;background:#ffe99a;box-shadow:0 0 10px 3px #d9b86acc;pointer-events:none;opacity:0}
+@keyframes starParticle{0%{opacity:0;transform:translate(0,0) scale(.2)}20%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.5)}}
+
