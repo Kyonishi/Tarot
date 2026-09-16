@@ -25,6 +25,7 @@
 .card-detail{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:24px;background:#080b19dd;backdrop-filter:blur(8px);animation:detailIn .25s ease both}
 .card-detail-panel{display:flex;flex-direction:column;align-items:center;gap:8px;width:min(88vw,340px);padding:20px;border:1px solid #d9b86a88;border-radius:16px;background:#14172df2;box-shadow:0 24px 90px #000d}
 .card-detail-panel .card{width:min(62vw,220px);min-height:0;aspect-ratio:148/228;transform:none!important;cursor:default}.card-detail-panel .card.reversed{transform:rotate(180deg)!important}.card-detail-panel .card.reversed img{transform:none!important}
+.card-detail-panel .face img{object-fit:contain;object-position:center;background:#17152d}
 .card-detail-panel h2{margin:4px 0 0;color:var(--gold);font-weight:normal}.card-detail-panel p{margin:0;text-align:center}.detail-status{color:#d98b9e!important;font-size:13px}.detail-keywords{color:#d9b86a!important;font-size:13px}
 .detail-close{margin-top:8px;border:1px solid #d9b86a66;border-radius:20px;padding:8px 18px;background:#ffffff08;color:var(--gold);font:inherit;cursor:pointer}
 .choice,.history,.draw button,.history-actions button{transition:transform .2s ease,background-color .2s ease,box-shadow .2s ease}.choice:hover,.history:hover{transform:translateY(-2px);box-shadow:0 6px 18px #0005}.draw button:hover{transform:translateY(-2px);box-shadow:0 8px 24px #d9b86a55}
