@@ -9,6 +9,7 @@
 .card:focus-visible,.choice:focus-visible,.history:focus-visible,.draw button:focus-visible{outline:3px solid #f4d889;outline-offset:4px}
 .table{perspective:1000px;min-height:330px}
 .card{aspect-ratio:148/228;height:auto;min-height:174px;transform-style:preserve-3d;backface-visibility:hidden}
+.card.back:hover{transform:translateY(-6px) rotateZ(-1deg);box-shadow:0 18px 42px #000b,0 0 24px #8d72d855}.back{background-image:radial-gradient(circle at center,#8d72d855 0,transparent 34%),linear-gradient(145deg,#272052,#0f1229);background-position:center}.back:before{background:transparent}.back:after{content:"";position:absolute;inset:12px;border:1px solid #d9b86a66;border-radius:5px;box-shadow:inset 0 0 20px #8d72d833}
 .card.face{cursor:zoom-in;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s ease}
 .card.face.enlarged{position:relative;z-index:30;transform:scale(1.7)!important;cursor:zoom-out;box-shadow:0 24px 70px #000d,0 0 40px #d9b86a88}
 .card.face.enlarged.reversed{transform:scale(1.7) rotate(180deg)!important}
@@ -41,4 +42,7 @@
 @media(prefers-reduced-motion:reduce){.card-detail{animation:none}.card.flipping,.card.shuffling,.face.revealed{animation-duration:.01ms!important;animation-iteration-count:1!important}}
 .star-particle{position:fixed;z-index:1000;width:5px;height:5px;border-radius:50%;background:#ffe99a;box-shadow:0 0 10px 3px #d9b86acc;pointer-events:none;opacity:0}
 @keyframes starParticle{0%{opacity:0;transform:translate(0,0) scale(.2)}20%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.5)}}
+.deck-mode{display:block;margin:12px auto 0;padding:9px 15px;border:1px solid #d9b86a66;border-radius:20px;background:#17152d;color:#d9b86a;font:inherit;text-align:center;outline:none}
+@media(max-width:560px){.choices{flex-wrap:wrap}.choice{flex:1 1 100%;max-width:360px}.table{gap:14px}.history-box{padding:18px}.reading{padding:18px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
