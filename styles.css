@@ -34,6 +34,7 @@
 .card-detail-panel .face b,.card-detail-panel .face small{display:none}
 .face img{position:absolute;inset:10px 10px auto;width:calc(100% - 20px);height:calc(100% - 62px);max-width:calc(100% - 20px);max-height:calc(100% - 62px);object-fit:cover;border-radius:5px}.face b,.face small{position:relative;z-index:2;background:#17152ddd;padding:1px 5px;border-radius:4px}.face b{margin-top:auto}.face small{margin-bottom:2px}
 .card-detail-panel h2{margin:4px 0 0;color:var(--gold);font-weight:normal}.card-detail-panel p{margin:0;text-align:center}.detail-status{color:#d98b9e!important;font-size:13px}.detail-keywords{color:#d9b86a!important;font-size:13px}
+.card-detail-panel .detail-meaning,.card-detail-panel .detail-advice{max-width:48ch;line-height:1.65;color:#d5d3e5;font-size:14px}.card-detail-panel .detail-advice{color:#e5cf91}
 .detail-close{margin-top:8px;border:1px solid #d9b86a66;border-radius:20px;padding:8px 18px;background:#ffffff08;color:var(--gold);font:inherit;cursor:pointer}
 .card-detail-panel .detail-keywords{margin-top:4px}.detail-close:focus-visible{outline:3px solid #f4d889;outline-offset:3px}
 .choice,.history,.draw button,.history-actions button{transition:transform .2s ease,background-color .2s ease,box-shadow .2s ease}.choice:hover,.history:hover{transform:translateY(-2px);box-shadow:0 6px 18px #0005}.draw button:hover{transform:translateY(-2px);box-shadow:0 8px 24px #d9b86a55}
